@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/group_pic"
+        android:layout_width="160dp"
+        android:layout_height="85dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mystery" />
+
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/group_pic" >
+
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Large"
+            />
+
+
+
+        <TextView
+            android:id="@+id/group_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_name"
+            android:ellipsize="end"
+            style="@android:style/TextAppearance.Large"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
