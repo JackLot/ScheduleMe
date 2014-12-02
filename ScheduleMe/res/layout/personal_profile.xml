@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- Username label -->
+
+            <TextView
+                android:id="@+id/personal_profile_username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                style="@android:style/TextAppearance.Large"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/personal_profile_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    style="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/edit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/personal_profile_name_label"
+                    android:src="@drawable/ic_action_edit"
+                    android:scaleType="fitStart"
+                    android:paddingLeft="8dp"/>
+            </RelativeLayout>
+            
+
+            <TextView
+                android:id="@+id/personal_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Here" />
+            
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/personal_profile_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    style="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/edit_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/personal_profile_email_label"
+                    android:src="@drawable/ic_action_edit" 
+                    android:paddingLeft="8dp"/>
+            </RelativeLayout>
+            
+
+            <TextView
+                android:id="@+id/personal_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Here" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mystery" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>
