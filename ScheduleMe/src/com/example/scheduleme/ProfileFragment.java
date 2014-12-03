@@ -85,10 +85,12 @@ public class ProfileFragment extends Fragment {
 		});
 		
 		
+		String name = session.getUserDetails().get(SessionManager.KEY_NAME);
+		
 		webView = (WebView) view.findViewById(R.id.webview);
 		webView.setWebViewClient(new WebViewClient());
 		webView.getSettings().setJavaScriptEnabled(true);
-		webView.loadUrl("http://www.google.com");
+		webView.loadUrl("http://scheduleme.herokuapp.com/get_calendar?did=" + name);
 		
 		return view;
 	}
